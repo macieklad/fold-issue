@@ -3,7 +3,7 @@ import HttpContext from "./HttpContext";
 
 export default class ExampleController {
     @inject()
-    async index(context: HttpContext) {
-        context.response.json({ message: `Hello from FooController, your ip is ${context.ip}` });
+    async index({ json, ip, url }: HttpContext) {
+        json({ message: `Hello from ExampleController, your called from ip ${ip} and url ${url}` });
     }
 }
