@@ -1,6 +1,5 @@
 import type { Request, Response } from "express";
 
-
 export default class HttpContext {
     static __references = new WeakMap<Request, HttpContext>();
 

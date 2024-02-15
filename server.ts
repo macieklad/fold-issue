@@ -6,8 +6,7 @@ import {container} from "./src/container";
 import IpController from "./src/FooController";
 import HttpContext from "./src/HttpContext";
 
-const app = express();
-
+const app = express()
 
 function controller(clazz: any, method: any) {
     return async (req: Request, res: Response) => {
